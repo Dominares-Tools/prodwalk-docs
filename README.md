@@ -4,11 +4,11 @@
 
 Commercial license v1.3 — see https://dominares.org/license · Support: support@dominares.org
 
-prodwalk drives a real browser (Chromium, WebKit or Firefox) through your production site as several roles on several screen sizes. Every non-read request, including a beacon sent as a page closes, is stopped before the network and fails the run. Secrets come from the environment and are cut from every line it prints or stores. A watchdog ends a stalled walk with the last step that finished.
+prodwalk drives a real browser (Chromium, WebKit or Firefox) through your production site as several roles on several screen sizes. Every non-read request except the writes you allow, such as the sign-in, is stopped before the network and fails the run; a beacon sent as a page closes is caught too, except on the walk's final page. Secrets come from the environment and are cut from every line it prints or stores. A watchdog ends a stalled walk with the last step that finished.
 
 ## Get it
 
-Buy prodwalk at https://dominares.org/tools/prodwalk: one payment of $49, plus sales tax where it applies, and every future update. After checkout you are invited to a private GitHub repository with the source and every version published to it. The repository includes the prodwalk command and Python hooks, a stand-in demo site, example walk files and the full test suite.
+Buy prodwalk at https://dominares.org/tools/prodwalk: one payment of $49, plus sales tax where it applies, and every future update. After checkout you are invited to a private GitHub repository with the source and every version published to it. The repository includes the prodwalk command and Python hooks, a stand-in demo site, example walk files and the test suite.
 
 Requirements: Python 3.10 or newer and Playwright, with a browser it can launch (pip install "./prodwalk[browser]" then playwright install chromium). Point it only at sites you are entitled to test.
 

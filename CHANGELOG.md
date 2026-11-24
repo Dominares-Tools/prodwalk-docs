@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.2
+
+- Write guard: the in-page shim no longer listens for `unload`. Recent Chromium reports "Permissions policy
+  violation: unload is not allowed in this document" for any unload listener, so every Chromium walk failed its
+  "zero console errors" check. `pagehide`, `beforeunload` and `freeze` still mark a closing page.
+
 ## 1.0.1
 
 - Write guard: a `sendBeacon` or `keepalive` fetch sent as a page closes is now stopped and fails the walk in

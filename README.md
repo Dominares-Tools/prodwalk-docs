@@ -12,7 +12,7 @@ Buy prodwalk at https://dominares.org/tools/prodwalk: one payment of $49, plus s
 
 Requirements: Python 3.10 or newer and Playwright, with a browser it can launch (pip install "./prodwalk[browser]" then playwright install chromium). Point it only at sites you are entitled to test.
 
-This page documents version 1.0.1. Install commands and file paths in the documentation below run inside the private repository you are invited to; the source is not in this repository.
+This page documents version 1.0.2. Install commands and file paths in the documentation below run inside the private repository you are invited to; the source is not in this repository.
 
 ## Documentation
 
